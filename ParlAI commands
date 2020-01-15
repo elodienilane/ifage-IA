@@ -1,4 +1,17 @@
+#parlai
 git clone https://github.com/facebookresearch/ParlAI.git
 cd ParlAI; python setup.py develop
 
 python -m parlai.scripts.display_data -t personality_captions
+
+
+#googletrans : https://pypi.org/project/googletrans/
+!pip install googletrans
+from googletrans import Translator
+
+translator = Translator()
+translator.translate('hello', dest='ja')
+
+translations = translator.translate(['The quick brown fox', 'jumps over', 'the lazy dog'], dest='de')
+for translation in translations:
+  print(translation.origin, ' -> ', translation.text)
