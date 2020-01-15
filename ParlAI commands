@@ -17,3 +17,6 @@ for translation in translations:
   print(translation.origin, ' -> ', translation.text)
 
 #https://github.com/facebookresearch/ParlAI/issues/1704
+
+#à regarder pour débuter
+#https://parl.ai/docs/tutorial_task.html#getting-a-new-dataset-into-parlai-the-simplest-way
