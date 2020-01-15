@@ -15,3 +15,5 @@ translator.translate('hello', dest='ja')
 translations = translator.translate(['The quick brown fox', 'jumps over', 'the lazy dog'], dest='de')
 for translation in translations:
   print(translation.origin, ' -> ', translation.text)
+
+#https://github.com/facebookresearch/ParlAI/issues/1704
